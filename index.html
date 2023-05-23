@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Convertidor de Pesos a Dólares</title>
+  <title>Convertidor de Pesos a Dolar y Euros</title>
+  <style>
+    .resultado {
+      color: green;
+    }
+  </style>
 </head>
 <body>
-<h1>Convertidor de Pesos a Dólares</h1>
-<label for="monto">Monto en pesos:</label>
-  
- 
-<input type="number" id="monto">
+  <h1>Convertidor de Pesos a Dolar y Euros</h1>
 
-<button onclick="convertirPesos()">Convertir</button>
+  <label for="monto">Monto:</label>
+  <input type="number" id="monto">
 
-<div id="resultadoBlue"></div>
-  
- 
-<div id="resultadoOficial"></div>
+  <label for="selectMoneda">Tipo de Moneda:</label>
+  <select id="selectMoneda">
+    <option value="dolar">Dólar</option>
+    <option value="euro">Euro</option>
+  </select>
 
+  <button onclick="convertirMoneda()">Convertir</button>
 
-<script src="./main.js"></script>
+  <div class="resultado" id="resultado"></div>
 
-
-
-
+  <script src="./main.js"></script>
 </body>
-
 </html>
